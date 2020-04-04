@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -22,6 +25,7 @@ class UserController extends Controller
 			return response()->json(['error' => 'Unauthorized'], 401);
 		}
 	}
+
 
 	/**
 	 * @return \Illuminate\Http\JsonResponse
