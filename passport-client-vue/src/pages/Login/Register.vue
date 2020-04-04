@@ -1,5 +1,6 @@
 <template>
   <div class="register-style">
+    
     <div class="register-form">
       <form>
         <h2 class="text-center">Registrarse en el sistema</h2>
@@ -37,6 +38,7 @@
         <a href="/login" class="pull-right">Identifícate</a>
       </form>
     </div>
+    <br>
   </div>
   
 </template>
@@ -86,21 +88,18 @@ export default {
 </script>
 <style>
 .register-style {
-  background: rgba(195, 24, 201, 0.39);
+  background-image: linear-gradient(360deg, rgb(170, 0, 119), rgb(255, 83, 241));
 }
 
 .register-form {
-  width: 340px;
+  width: 450px;
   margin: 50px auto;
   margin-bottom: 15px;
   background: rgb(36, 26, 26);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.452);
   padding: 30px;
 }
-.register-form {
-  width: 450px;
-  margin: 50px auto;
-}
+
 
 .register-form h2 {
   margin: 0 0 50px;

@@ -3,8 +3,6 @@
     <div class="login-form">
       <h2 class="text-center">Log in</h2>
 
-      <h3>{{ email }}</h3>
-      <h3>{{password}}</h3>
 
       <div class="form-group">
         <input
@@ -130,7 +128,7 @@ export default {
 <style>
 
 .login-style{
-    background: rgba(248, 50, 255, 0.39);
+    background-image: linear-gradient(360deg, rgb(170, 0, 119), rgb(255, 83, 241));
 }
 
 .login-form {
