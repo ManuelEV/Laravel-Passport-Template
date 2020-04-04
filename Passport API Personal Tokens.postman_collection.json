@@ -1,0 +1,187 @@
+{
+	"id": "57bcd8e2-32ba-459c-bbd9-62d0c2ab8391",
+	"name": "Passport API Personal Tokens",
+	"description": "",
+	"order": [
+		"ba9f60b3-d038-43d7-9dd7-9f67e873f396",
+		"2293f551-be82-4334-8aeb-9eab51fc2f43",
+		"a07e59c3-119e-458c-b9bf-d48a3d71dac6",
+		"cf0b9855-cbab-f13b-b40e-b0dabf86f0ff"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "1817212",
+	"public": false,
+	"requests": [
+		{
+			"folder": null,
+			"id": "2293f551-be82-4334-8aeb-9eab51fc2f43",
+			"name": "https://passport-api.test/api/login",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "email",
+					"value": "cliente@mail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "secret",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "https://passport-api.test/api/login",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "57bcd8e2-32ba-459c-bbd9-62d0c2ab8391"
+		},
+		{
+			"folder": null,
+			"id": "a07e59c3-119e-458c-b9bf-d48a3d71dac6",
+			"name": "https://passport-api.test/api/products",
+			"dataMode": "params",
+			"data": null,
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAwYTk0OTVlNDBjZjgxNDcyYWIyZGVhMDI5NDlmMDY0ZDJmNmMwYmM4YmJhNTRhNmQzZThlOWY5OTJlNTQ1ZDI5N2MxOTRhYmU1Mzc1YzUyIn0.eyJhdWQiOiIxIiwianRpIjoiMDBhOTQ5NWU0MGNmODE0NzJhYjJkZWEwMjk0OWYwNjRkMmY2YzBiYzhiYmE1NGE2ZDNlOGU5Zjk5MmU1NDVkMjk3YzE5NGFiZTUzNzVjNTIiLCJpYXQiOjE1MzU5MDA2OTIsIm5iZiI6MTUzNTkwMDY5MiwiZXhwIjoxNTY3NDM2NjkyLCJzdWIiOiIyIiwic2NvcGVzIjpbInNob3ctcHJvZHVjdHMiLCJzaG93LWludm9pY2VzIl19.FZd0LWkUBf4ewrg755Lu-1YCqk8Svdyqwl3VmNQF_l2_TyNO9EWXmnmaludyljVBIgvH__VuTXjQzAp2Ls9Rgiu5m0HkypOdZZSjXFe4CqTyw64XEsvUj644s9yat8H-RkzD5J5SLey49g6qddEbIopjtheirAs2Uhv5f1gWJbwbD_8IExpM1U0JSNOSTulSvur6O0EKUmcnl_1PDy5_u4LJvXOXoc6dp3JAQX4AeEN6U02d-Y--DZCsl6i6sExZIBlAqQuZ6yaY6kShoIJ50t0b266I3-_sguZzJ1HalyfJhuDEkjf6GfueSQmkoeNu3MdPyWsUVbmx0mlEFMvAHJKZfFStKtUHujMlIahMYCsl2UC3f4JlNl2WdSP0F4ELDabebaglkZArw8sXR49v6oYs2r6yjGuQeHQrwKSC3frfi-qii6L4Dtcsp_mSSvu4QlZFy-PAQoYpZEdL4_E9ZVmGgeQsN5j0GhGQlcuGem_CXsEpvtplGdke2q8urjS_ttIjNbvtG645ECQEV_9FsY2OwhtHSoYrUcFQDp2NeLk0dpObooYD2fCr2IJNi48enzSpA12nn2dhRxyrJnYod6n7pzrZ1JYHbYKh3RBbv0GXtWp_GHNqmlt5aEvPemMQGs-NP5ZpUMrv8WaaJnED5aTT87FBTzre9AaSvEVZOaA",
+						"type": "string"
+					}
+				]
+			},
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "Accept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://passport-api.test/api/products",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "bearerAuth",
+			"helperAttributes": {
+				"id": "bearer",
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAwYTk0OTVlNDBjZjgxNDcyYWIyZGVhMDI5NDlmMDY0ZDJmNmMwYmM4YmJhNTRhNmQzZThlOWY5OTJlNTQ1ZDI5N2MxOTRhYmU1Mzc1YzUyIn0.eyJhdWQiOiIxIiwianRpIjoiMDBhOTQ5NWU0MGNmODE0NzJhYjJkZWEwMjk0OWYwNjRkMmY2YzBiYzhiYmE1NGE2ZDNlOGU5Zjk5MmU1NDVkMjk3YzE5NGFiZTUzNzVjNTIiLCJpYXQiOjE1MzU5MDA2OTIsIm5iZiI6MTUzNTkwMDY5MiwiZXhwIjoxNTY3NDM2NjkyLCJzdWIiOiIyIiwic2NvcGVzIjpbInNob3ctcHJvZHVjdHMiLCJzaG93LWludm9pY2VzIl19.FZd0LWkUBf4ewrg755Lu-1YCqk8Svdyqwl3VmNQF_l2_TyNO9EWXmnmaludyljVBIgvH__VuTXjQzAp2Ls9Rgiu5m0HkypOdZZSjXFe4CqTyw64XEsvUj644s9yat8H-RkzD5J5SLey49g6qddEbIopjtheirAs2Uhv5f1gWJbwbD_8IExpM1U0JSNOSTulSvur6O0EKUmcnl_1PDy5_u4LJvXOXoc6dp3JAQX4AeEN6U02d-Y--DZCsl6i6sExZIBlAqQuZ6yaY6kShoIJ50t0b266I3-_sguZzJ1HalyfJhuDEkjf6GfueSQmkoeNu3MdPyWsUVbmx0mlEFMvAHJKZfFStKtUHujMlIahMYCsl2UC3f4JlNl2WdSP0F4ELDabebaglkZArw8sXR49v6oYs2r6yjGuQeHQrwKSC3frfi-qii6L4Dtcsp_mSSvu4QlZFy-PAQoYpZEdL4_E9ZVmGgeQsN5j0GhGQlcuGem_CXsEpvtplGdke2q8urjS_ttIjNbvtG645ECQEV_9FsY2OwhtHSoYrUcFQDp2NeLk0dpObooYD2fCr2IJNi48enzSpA12nn2dhRxyrJnYod6n7pzrZ1JYHbYKh3RBbv0GXtWp_GHNqmlt5aEvPemMQGs-NP5ZpUMrv8WaaJnED5aTT87FBTzre9AaSvEVZOaA"
+			},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "57bcd8e2-32ba-459c-bbd9-62d0c2ab8391"
+		},
+		{
+			"folder": null,
+			"id": "ba9f60b3-d038-43d7-9dd7-9f67e873f396",
+			"name": "https://passport-api.test/api/register",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "name",
+					"value": "cliente",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "cliente@mail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "secret",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "https://passport-api.test/api/register",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "57bcd8e2-32ba-459c-bbd9-62d0c2ab8391"
+		},
+		{
+			"id": "cf0b9855-cbab-f13b-b40e-b0dabf86f0ff",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://passport-api.test/api/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "57bcd8e2-32ba-459c-bbd9-62d0c2ab8391",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://passport-api.test/api/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1535994075335,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "bearerAuth",
+			"helperAttributes": {
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEwYjJmZmE2M2JkZWFkZjlhNDhmNGRlNDIzMDUxMzY5NjhjNmJhMDRjN2E3MDYyNTE5YTU2NDg1Njg0NmQ2MDg1YmUwNGFjZmQ0MTA2OTg5In0.eyJhdWQiOiIxIiwianRpIjoiYTBiMmZmYTYzYmRlYWRmOWE0OGY0ZGU0MjMwNTEzNjk2OGM2YmEwNGM3YTcwNjI1MTlhNTY0ODU2ODQ2ZDYwODViZTA0YWNmZDQxMDY5ODkiLCJpYXQiOjE1MzU5OTE0NTcsIm5iZiI6MTUzNTk5MTQ1NywiZXhwIjoxNTY3NTI3NDU3LCJzdWIiOiIyIiwic2NvcGVzIjpbInNob3ctcHJvZHVjdHMiXX0.VpkHh9diVNcRgR39RW8UZjh9_Jbv3EBwsjgjVbrqqg23QdfdKPq3Vv_YLaynWq9L5yKvlSTiZErXfHBwtfwOHtRuaorlsaWKeTx6qGUEMydRteG05BML2N9N-cVbiIcUrwsoYIXBTTCojeQgYAoEs0cy7GqBGyLLGu8quJsvJrNCdubElMvM6MCh8Oxf_sRPVIBnzZkv6Sws5cHphBlk-CWMKJIMbHytymSFbJkff9n46vyDDilAUxV0hyw8_NfNW5zFODtOWlipXkSvmNJYu-eLdbMr9R8eHnhOnFeVzfNPN7g78jCHbTroviEe6uOwq-eYeY1A9mP3jHB92TdaSNr5AiqxZ5K73yzuycFHtn5Vhm_q7ftuEXJ0TyzxpM4kHBQ6Ic147X1QhkMR13oTDfJiTlJXExtBfli8-F-_0oOQyrnHrSiaYGpwqU-R8K97x8Ntx4YzxWWGFoScTVai72SMd_mRtFyROH0IRV8LWmf7D9bCmxDfDgxcIWGq9hPaMtDMqcLWcVzxP9nY4dT-IPgdcNfJl2yDTEMyZwl-Hav0t6wcWmRpaqXN5jjx7I-bFWG-mFT0RUKb042myoDU62G2S6zjkw24KPwgYQ5fdcfY52orfdS16r-1mXpwFNSu5DiuLhvx1GjVPqjQFg4RAOEIqqoOszmghTXoedtTTTI"
+			}
+		}
+	]
+}
