@@ -27,9 +27,9 @@ Content-Type: application/x-www-form-urlencoded
 Body:
 
 {
-    'name': 'Your_name',
-    'email': 'Your_email',
-    'password': 'Your_password'
+    "name": "Your_name",
+    "email": "Your_email",
+    "password": "Your_password"
 }
 
 ```
@@ -46,8 +46,8 @@ Content-Type: application/x-www-form-urlencoded
 Body:
 
 {
-    'email': 'Your_email',
-    'password': 'Your_password'
+    "email": "Your_email",
+    "password": "Your_password"
 }
 
 ```
@@ -57,7 +57,7 @@ You are going to get a Token to access the API.
 ### Access to the API
 
 ```json
-url: http://localhost:8000/api/loginuser
+url: http://localhost:8000/api/user
 Headers:
 Accept: application/json
 Authorization: 'Bearer YOUR_TOKEN'
